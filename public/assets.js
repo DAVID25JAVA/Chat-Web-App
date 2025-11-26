@@ -78,6 +78,7 @@ export const userDummyData = [
         "profilePic": profile_richard,
         "bio": "Hi Everyone, I am Using QuickChat",
     }
+     
 ]
 
 export const messagesDummyData = [
