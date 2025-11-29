@@ -61,7 +61,7 @@ function ChatContainer({ selectedUser, setSelectedUser }) {
                   src={msg?.image}
                   alt="message"
                   height={200}
-                  width={300}
+                  width={200}
                   className="object-cover"
                 />
               </div>
@@ -107,7 +107,7 @@ function ChatContainer({ selectedUser, setSelectedUser }) {
   ) : (
     <div className="mx-auto flex items-center justify-center  ">
       <div className="text-center flex items-center justify-center flex-col gap-5">
-        <Image alt="img" src={assets?.logo_icon} width={180} height={200} />
+        <Image alt="img" src={assets?.logo_icon} width={100} height={200} />
         <h2 className="text-2xl font-bold mb-2">Chat anytime, anywhere</h2>
       </div>
     </div>
