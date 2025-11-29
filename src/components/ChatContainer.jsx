@@ -12,7 +12,7 @@ function ChatContainer({ selectedUser, setSelectedUser }) {
   }, [messagesDummyData]);
 
   return selectedUser ? (
-    <div className="flex flex-col h-[90vh] md:h-[85vh]">
+    <div className="flex flex-col h-[90vh] md:h-[90vh]">
       {/* Chat Headers */}
       <div className="border-b p-4 flex items-center gap-3 shrink-0">
         <Image
@@ -89,7 +89,7 @@ function ChatContainer({ selectedUser, setSelectedUser }) {
           <input
             type="text"
             placeholder="Write your msg.........."
-            className="w-full p-2 pr-12 outline-none bg-gray-900 text-white rounded-full px-5"
+            className="w-full p-2   outline-none bg-gray-900 text-white rounded-full px-5"
           />
           <input id="file" type="file" className="hidden" />
           <label
@@ -105,8 +105,9 @@ function ChatContainer({ selectedUser, setSelectedUser }) {
       </div>
     </div>
   ) : (
-    <div className="flex items-center justify-center h-screen">
-      <div className="text-center">
+    <div className="mx-auto flex items-center justify-center  ">
+      <div className="text-center flex items-center justify-center flex-col gap-5">
+        <Image alt="img" src={assets?.logo_icon} width={180} height={200} />
         <h2 className="text-2xl font-bold mb-2">Chat anytime, anywhere</h2>
       </div>
     </div>

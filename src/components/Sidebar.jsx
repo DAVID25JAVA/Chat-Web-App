@@ -38,7 +38,7 @@ function Sidebar({ selectedUser, setSelectedUser }) {
               selectedUser?._id === data?._id ? "bg-gray-800/70" : ""
             }`}
           >
-            <div className="flex gap-3 md:py- 3 py-1 md:px-4 px-2 items-center cursor-pointer">
+            <div className="flex gap-3   py-1  px-2 items-center cursor-pointer">
               {/* Profile Picture with Online Indicator */}
               <div className="relative">
                 <Image
